@@ -107,12 +107,5 @@ class Machoke extends Pokemon {
 
 ## Demo Aplikasi
 
-_(Letakkan file GIF demo Anda di sini. Ganti `demo.gif` dengan nama file Anda)_
+demo.gif
 
-![Demo Aplikasi](demo.gif)
-
-**Cara membuat GIF:**
-
-1.  Rekam layar saat Anda menggunakan aplikasi (melatih, naik level, melihat history).
-2.  Gunakan tools seperti Ezgif atau aplikasi perekam layar untuk menyimpan sebagai `.gif`.
-3.  Simpan file gif tersebut di dalam folder root proyek ini.
