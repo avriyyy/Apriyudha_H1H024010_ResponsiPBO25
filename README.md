@@ -107,5 +107,5 @@ class Machoke extends Pokemon {
 
 ## Demo Aplikasi
 
-![](https://github.com/avriyyy/Apriyudha_H1H024010_ResponsiPBO25/blob/133be3f09a5951d51d1a0df8bf2db142ece97aab/demo.gif)
+![til](demo.gif)
 
