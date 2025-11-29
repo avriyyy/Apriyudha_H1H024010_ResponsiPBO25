@@ -1,0 +1,12 @@
+{
+    "name": "Machoke",
+    "type": "Fighting",
+    "level": 44,
+    "hp": 4565,
+    "maxHp": 4565,
+    "attack": 9378,
+    "defense": 10048,
+    "speed": 7194,
+    "exp": 244,
+    "maxExp": 5835
+}
