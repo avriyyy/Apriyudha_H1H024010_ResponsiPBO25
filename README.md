@@ -1,9 +1,9 @@
 # Apriyudha_H1H024010_ResponsiPBO25
 
-**Nama:** Apriyudha
-**NIM:** H1H024010
-**Shift Awal:** A
-**Shift Akhir:** D
+**Nama:** Apriyudha /n
+**NIM:** H1H024010 /n
+**Shift Awal:** A /n
+**Shift Akhir:** D /n
 
 ---
 
@@ -13,19 +13,10 @@
 
 Aplikasi ini menerapkan konsep **Object-Oriented Programming (OOP)** secara menyeluruh, termasuk **Encapsulation**, **Inheritance**, **Polymorphism**, dan **Abstraction**.
 
-### Fitur Utama:
-
-1.  **Dashboard**: Menampilkan status terkini Pokémon, termasuk Level, HP, Ability, dan Tier Kartu (Common, Rare, Ultra Rare, Legendary).
-2.  **Training Session**: Fitur untuk melatih Pokémon dengan berbagai tipe latihan (Strength, Speed, Defense) dan intensitas yang dapat disesuaikan.
-3.  **Dynamic Progression**: Leveling system yang dinamis dimana kenaikan status bergantung pada level Pokémon saat ini.
-4.  **Visual Feedback**: Animasi kartu, efek level up, dan perubahan visual kartu berdasarkan tier.
-5.  **History**: Mencatat riwayat pelatihan yang telah dilakukan.
 
 ---
 
-## Penerapan OOP (4 Pilar)
-
-Berikut adalah penjelasan dan contoh kode bagaimana 4 pilar OOP diterapkan dalam proyek ini:
+## Penjelasan Kode - Penerapan OOP (4 Pilar)
 
 ### 1. Encapsulation (Enkapsulasi)
 
