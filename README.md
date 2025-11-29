@@ -94,7 +94,10 @@ class Machoke extends Pokemon {
 2.  **Instalasi**:
 
     - Clone atau download repository ini di direktori `C:\laragon\www\`.
-      ```git clone https://github.com/avriyyy/Apriyudha_H1H024010_ResponsiPBO25.git```
+
+      ```cmd
+      git clone https://github.com/avriyyy/Apriyudha_H1H024010_ResponsiPBO25.git
+      ```
 
 3.  **Menjalankan**:
     - Nyalakan server apache laragon lalu klik kanan pada laragon > www > nama file yang di clone.
