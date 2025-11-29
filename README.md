@@ -1,9 +1,12 @@
 # Apriyudha_H1H024010_ResponsiPBO25
 
-**Nama:** Apriyudha /n
-**NIM:** H1H024010 /n
-**Shift Awal:** A /n
-**Shift Akhir:** D /n
+**Nama:** Apriyudha
+
+**NIM:** H1H024010
+
+**Shift Awal:** A
+
+**Shift Akhir:** D
 
 ---
 
@@ -13,7 +16,6 @@
 
 Aplikasi ini menerapkan konsep **Object-Oriented Programming (OOP)** secara menyeluruh, termasuk **Encapsulation**, **Inheritance**, **Polymorphism**, dan **Abstraction**.
 
-
 ---
 
 ## Penjelasan Kode - Penerapan OOP (4 Pilar)
@@ -22,7 +24,7 @@ Aplikasi ini menerapkan konsep **Object-Oriented Programming (OOP)** secara meny
 
 Membungkus data (properti) dan menyembunyikannya dari akses langsung dari luar kelas. Akses dilakukan melalui method (getter/setter).
 
-**Contoh di `src/Pokemon.php`:**
+**Contoh di `Pokemon.php`:**
 
 ```php
 abstract class Pokemon {
@@ -40,7 +42,7 @@ abstract class Pokemon {
 
 Membuat kelas baru (`Machoke`) yang mewarisi sifat dan perilaku dari kelas induk (`Pokemon`). Ini memungkinkan penggunaan kembali kode.
 
-**Contoh di `src/Machoke.php`:**
+**Contoh di `Machoke.php`:**
 
 ```php
 // Machoke mewarisi semua properti dan method dari Pokemon
@@ -56,29 +58,23 @@ class Machoke extends Pokemon {
 
 Mendefinisikan kerangka kerja dasar dalam kelas abstrak yang harus diimplementasikan oleh kelas turunannya. Kelas `Pokemon` tidak bisa diinstansiasi sendiri, hanya kelas turunannya (`Machoke`) yang bisa.
 
-**Contoh di `src/Pokemon.php`:**
+**Contoh di `Pokemon.php`:**
 
 ```php
 abstract class Pokemon {
     // Method abstrak yang WAJIB diimplementasikan oleh kelas anak
     abstract public function train($type, $intensity);
-    abstract public function getAbility();
 }
 ```
 
 ### 4. Polymorphism (Polimorfisme)
 
-Kemampuan objek untuk mengambil banyak bentuk. Method yang sama (`train` atau `getAbility`) dapat memiliki implementasi yang berbeda pada kelas yang berbeda.
+Kemampuan objek untuk mengambil banyak bentuk. Method yang sama (`train`) dapat memiliki implementasi yang berbeda pada kelas yang berbeda.
 
-**Contoh di `src/Machoke.php`:**
+**Contoh di `Machoke.php`:**
 
 ```php
 class Machoke extends Pokemon {
-    // Implementasi spesifik dari method abstrak getAbility untuk Machoke
-    public function getAbility() {
-        return "Guts / No Guard";
-    }
-
     // Implementasi spesifik dari logika latihan untuk Machoke
     public function train($type, $intensity) {
         // Logika perhitungan stat khusus Machoke...
@@ -88,50 +84,21 @@ class Machoke extends Pokemon {
 
 ---
 
-## Game Mechanics
-
-### 1. Level Up Moves
-
-Machoke akan mempelajari moves baru seiring dengan kenaikan levelnya. Berikut adalah daftar moves yang dapat dipelajari:
-
-| Level | Name         | Type     | Power | Accuracy | PP  | Details                                                                                                    |
-| :---- | :----------- | :------- | :---- | :------- | :-- | :--------------------------------------------------------------------------------------------------------- |
-| 1     | Karate Chop  | Fighting | 50    | 100%     | 25  | The target is attacked with a sharp chop. Critical hits land more easily.                                  |
-| 1     | Low Kick     | Fighting | -     | 100%     | 20  | A powerful low kick that makes the target fall over. The heavier the target, the greater the move's power. |
-| 25    | Leer         | Normal   | -     | 100%     | 30  | The user gives opposing Pokémon an intimidating leer that lowers the Defense stat.                         |
-| 36    | Focus Energy | Normal   | -     | -        | 30  | The user takes a deep breath and focuses so that critical hits land more easily.                           |
-| 44    | Seismic Toss | Fighting | -     | 100%     | 20  | The target is thrown using the power of gravity. It inflicts damage equal to the user's level.             |
-| 52    | Submission   | Fighting | 80    | 80%      | 20  | The user grabs the target and recklessly dives for the ground. This also damages the user a little.        |
-
-### 2. Card Tier Progression
-
-Tampilan kartu Machoke akan berubah (berevolusi) berdasarkan level yang dicapai, menandakan peningkatan status dan kelangkaan kartu.
-
-| Level Range | Card Tier      | Unlocked Features                         |
-| :---------- | :------------- | :---------------------------------------- |
-| **1 - 24**  | **Common**     | Basic Moves (Karate Chop, Low Kick)       |
-| **25 - 35** | **Rare**       | Unlocks **Leer** Move                     |
-| **36 - 43** | **Ultra Rare** | Unlocks **Focus Energy** Move             |
-| **44+**     | **Legendary**  | Unlocks **Seismic Toss** & **Submission** |
-
----
-
 ## Cara Menjalankan Aplikasi
 
-1.  **Persiapan Lingkungan**:
+1.  **Persiapan**:
 
-    - Pastikan Anda telah menginstal web server lokal seperti **Laragon** atau **XAMPP**.
+    - Pastikan Anda telah menginstal web server lokal seperti **Laragon**.
     - Pastikan PHP telah terinstal dan berjalan.
 
 2.  **Instalasi**:
 
-    - Clone atau download repository ini.
-    - Pindahkan folder proyek ke dalam direktori root web server Anda (misalnya: `C:\laragon\www\` atau `C:\xampp\htdocs\`).
-    - Ubah nama folder menjadi format: `Nama_NIM_ResponsiPBO25`.
+    - Clone atau download repository ini di direktori `C:\laragon\www\`.
+      ```git clone https://github.com/avriyyy/Apriyudha_H1H024010_ResponsiPBO25.git```
 
 3.  **Menjalankan**:
-    - Buka browser dan akses: `http://localhost/Nama_NIM_ResponsiPBO25`
-    - Aplikasi siap digunakan! Data Pokémon akan tersimpan secara otomatis dalam file JSON di folder `data/`.
+    - Nyalakan server apache laragon lalu klik kanan pada laragon > www > nama file yang di clone.
+    - Aplikasi siap digunakan! Data Pokémon akan tersimpan secara otomatis dalam file JSON seperti `pokemon.json` dan `history.json`.
 
 ---
 
